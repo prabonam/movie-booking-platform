@@ -1,14 +1,20 @@
 # movie-booking-platform
 
-**Candidate Solution (XYZ Online Movie Booking Platform)
-****1. Functional Features (Mandatory Read/Write Scenario)
+****Candidate Solution (XYZ Online Movie Booking Platform)**
 **
-**Chosen Read Scenario:
+
+****1. Functional Features (Mandatory Read/Write Scenario)**
+**
+****Chosen Read Scenario:**
 **==> Browse theatres currently running the show (movie selected) in the town, including show timing by a chosen date.
 
-**API Contract (Example in REST + JSON):
+****API Contract (Example in REST + JSON):**
 **
+
+
 GET /movies/{city}/{date}?language=EN&genre=Action
+
+
 Response:
 {
   "movie": "Inception",
@@ -26,11 +32,13 @@ Response:
   ]
 }
 
-**Chosen Write Scenario:
-**
-==> Book movie tickets by selecting a theatre, timing, and preferred seats for the day.
 
-**API Contract (Example):
+
+****Chosen Write Scenario:**
+**
+==> **Book movie tickets by selecting a theatre, timing, and preferred seats for the day.**
+
+****API Contract (Example):**
 **
 POST /bookings
 Request:
@@ -50,7 +58,9 @@ Response:
 }
 
 
-**Design Pattern:
+
+
+****Design Pattern:**
 **
 Factory Pattern → Payment Gateway integration (Razorpay, PayPal, Stripe).
 
@@ -58,7 +68,7 @@ Strategy Pattern → Apply discounts/offers dynamically.
 
 Observer Pattern → Notify users (email/SMS) on booking confirmation or cancellation.
 
-**2. Non-Functional Requirements (NFRs)
+****2. Non-Functional Requirements (NFRs)**
 **
 Transactions & Consistency
 
@@ -176,6 +186,7 @@ API availability
 Revenue per city
 
 Tools: ELK + Prometheus + Grafana
+
 
 **High-level Project Plan (6 months MVP)**
 
